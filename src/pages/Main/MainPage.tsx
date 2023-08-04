@@ -6,7 +6,7 @@ import styles from './MainPage.module.scss';
 
 const MainPage = () => (
   <PageLayout
-    pageName='Welcome'
+    pageName='Welcome to Finances'
     leftColumnChildren={<Registration />}
     rightColumnChildren={<Authorization />}
   />

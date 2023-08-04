@@ -3,18 +3,22 @@
 .page {
   background: colors.$gradientDark;
   min-height: 100vh;
+  padding: 100px;
 }
 
 .header {
-  min-width: 1024px;
-  max-width: 1240px;
+  margin-bottom: 30px;
+}
+
+.title {
+  font-size: 4rem;
+  font-weight: 700;
 }
 
 .wrapper {
-  min-width: 1024px;
-  max-width: 1440px;
-  margin: 0 auto;
   display: flex;
+  justify-content: center;
+  align-items: center;
   gap: 24px;
 }
 

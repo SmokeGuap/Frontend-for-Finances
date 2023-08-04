@@ -2,7 +2,7 @@
 
 .button {
   font-weight: 700;
-  min-width: 10rem;
+  width: 70%;
   border: none;
   display: flex;
   justify-content: center;
@@ -10,13 +10,17 @@
   cursor: pointer;
 
   &__brand {
+    font-size: 16px;
     margin: 0 auto;
-    height: 40px;
+    height: 50px;
     background-color: colors.$brand;
   }
   &:disabled {
     background: rgba(255, 255, 255, 0.05);
     opacity: 0.5;
+  }
+  &:active {
+    color: colors.$halfWhite;
   }
 }
 

@@ -12,17 +12,15 @@ const PageLayout: FC<PagesLayout> = ({
   const [isLogin, setIsLogin] = useState(false);
   return (
     <div className={styles.page}>
-      <div className={styles.header}>
-        <div className={styles.title}>
-          <p>{pageName}</p>
-        </div>
+      <header className={styles.header}>
+        <p className={styles.title}>{pageName}</p>
         {isLogin && (
           <div className={styles.count}>
             <p>100 000</p>
             <p>На счету</p>
           </div>
         )}
-      </div>
+      </header>
       <div className={styles.wrapper}>
         <div className={styles.leftColumn}>{leftColumnChildren}</div>
         <div className={styles.rightColumn}>{rightColumnChildren}</div>
