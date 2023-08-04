@@ -7,21 +7,18 @@
   list-style: none;
   box-sizing: border-box;
   font-family: 'Montserrat', sans-serif;
-}
-
-body {
-  height: 100vh;
+  color: white;
 }
 
 body *::-webkit-scrollbar {
   width: 13px;
-  background-color: hsla(255, 22%, 93%, 1);
+  background-color: colors.$gray;
 }
 
 body *::-webkit-scrollbar-thumb {
   width: 13px;
   border-radius: 3px;
-  background-color: hsla(255, 22%, 93%, 1);
+  background-color: colors.$gray;
 }
 
 p {
@@ -30,4 +27,5 @@ p {
 
 button {
   background-color: transparent;
+  border: none;
 }

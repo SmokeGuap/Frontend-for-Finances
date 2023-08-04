@@ -1,8 +1,8 @@
 import { FC, useState } from 'react';
-import styles from './PagesLayout.module.scss';
-import { PagesLayout } from '../../types';
+import styles from './PageLayout.module.scss';
+import { PagesLayout } from 'src//types';
 
-const PagesLayout: FC<PagesLayout> = ({
+const PageLayout: FC<PagesLayout> = ({
   pageName,
   leftColumnChildren,
   rightColumnChildren,
@@ -29,4 +29,4 @@ const PagesLayout: FC<PagesLayout> = ({
   );
 };
 
-export default PagesLayout;
+export default PageLayout;

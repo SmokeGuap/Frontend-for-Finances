@@ -1,7 +1,7 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
-import { PATHNAMES } from '../consts';
-import { MainPage } from '../pages';
+import { PATHNAMES } from 'src/consts';
+import { MainPage } from 'src/pages';
 
 const AppRouter = () => (
   <Router>
