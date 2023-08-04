@@ -1,6 +1,6 @@
 import { FC, useState } from 'react';
 import styles from './PageLayout.module.scss';
-import { PagesLayout } from 'src//types';
+import { PagesLayout } from '@/types';
 
 const PageLayout: FC<PagesLayout> = ({
   pageName,

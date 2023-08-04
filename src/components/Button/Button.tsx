@@ -1,7 +1,7 @@
 import { FC } from 'react';
 
-import { classnames } from 'src/utils';
-import buttonType from 'src/types/button';
+import { classnames } from '@/utils';
+import buttonType from '@/types/button';
 
 import styles from './Button.module.scss';
 
@@ -10,11 +10,10 @@ const Button: FC<buttonType> = ({
   bgColor,
   radius = 1000,
   height,
-  isDisabled,
+  isDisabled = false,
   onClick,
   children,
 }) => {
-  
   const buttonOnClick = (e: React.MouseEvent<HTMLButtonElement>) => {
     e.preventDefault();
     onClick && onClick();

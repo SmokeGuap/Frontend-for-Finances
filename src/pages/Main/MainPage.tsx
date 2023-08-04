@@ -1,4 +1,4 @@
-import PageLayout from 'src/layouts/PageLayout';
+import PageLayout from '@/layouts/PageLayout';
 import Registration from './Registration';
 
 import styles from './MainPage.module.scss';

@@ -1,6 +1,8 @@
-@use 'src/assets/styles/colors';
+@use '@/assets/styles/colors';
 
 .button {
+  font-weight: 700;
+  min-width: 10rem;
   border: none;
   display: flex;
   justify-content: center;
@@ -8,54 +10,18 @@
   cursor: pointer;
 
   &__brand {
-    width: 280px;
     margin: 0 auto;
     height: 40px;
     background-color: colors.$brand;
-  }
-
-  &__ghost {
-    background-color: transparent;
-  }
-  &__glass {
-    background-color: colors.$glass;
   }
   &:disabled {
     background: rgba(255, 255, 255, 0.05);
     opacity: 0.5;
   }
-  &__right {
-    border-radius: 100px !important;
-    border-top-right-radius: 0 !important;
-    border-bottom-right-radius: 0 !important;
-  }
-  &__left {
-    border-radius: 100px !important;
-    border-top-left-radius: 0 !important;
-    border-bottom-left-radius: 0 !important;
-  }
-  &__add {
-    position: relative;
-  }
-}
-
-.button:active {
-  opacity: 0.5;
 }
 
 .button-color {
   &__brand {
     background-color: colors.$brand;
-  }
-
-  &__error {
-    background-color: colors.$error;
-  }
-
-  &__glass {
-    background-color: colors.$glass;
-  }
-  &__success {
-    background-color: colors.$success;
   }
 }
